@@ -1,0 +1,51 @@
+package cc.notalk.infinityjava.io;
+
+/**
+ * @author fatyu
+ * 主要介绍bytebuff源码
+ */
+public class ByteBufferTest {
+
+    public static void main(String[] args) throws java.io.FileNotFoundException {
+        java.nio.ByteBuffer buffer = java.nio.ByteBuffer.allocate(1024);
+
+        java.io.RandomAccessFile aFile = new java.io.RandomAccessFile("data/nio-data.txt", "rw");
+        java.nio.channels.FileChannel inChannel = aFile.getChannel();
+
+
+    }
+}
+package cc.notalk.infinityjava.io;
+
+/**
+ * @author fatyu
+ * 主要介绍bytebuff源码
+ */
+public class ByteBufferTest {
+
+    public static void main(String[] args) throws java.io.FileNotFoundException {
+        java.nio.ByteBuffer buffer = java.nio.ByteBuffer.allocate(1024);
+
+        java.io.RandomAccessFile aFile = new java.io.RandomAccessFile("data/nio-data.txt", "rw");
+        java.nio.channels.FileChannel inChannel = aFile.getChannel();
+
+
+    }
+}
+package cc.notalk.infinityjava.io;
+
+/**
+ * @author fatyu
+ * 主要介绍bytebuff源码
+ */
+public class ByteBufferTest {
+
+    public static void main(String[] args) throws java.io.FileNotFoundException {
+        java.nio.ByteBuffer buffer = java.nio.ByteBuffer.allocate(1024);
+
+        java.io.RandomAccessFile aFile = new java.io.RandomAccessFile("data/nio-data.txt", "rw");
+        java.nio.channels.FileChannel inChannel = aFile.getChannel();
+
+
+    }
+}
