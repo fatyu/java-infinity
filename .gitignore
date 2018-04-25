@@ -24,3 +24,6 @@
 hs_err_pid*
 
 .idea/workspace.xml
+/.idea/
+/target/
+src/main/java/cc/notalk/infinityjava/.DS_Store
