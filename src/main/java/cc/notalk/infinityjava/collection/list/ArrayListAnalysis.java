@@ -1,6 +1,7 @@
 package cc.notalk.infinityjava.collection.list;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class ArrayListAnalysis {
 
@@ -18,6 +19,50 @@ public class ArrayListAnalysis {
             i++;
         }
         System.out.println("list data is :" + list.toString());
+    }
+
+
+    public void vector() {
+        Vector<User> users = new Vector<User>();//默认创建10个元素的数组
+        for (int i = 0; i < 100; i++) {
+            User user = new User();
+            user.setName("user:" + i);
+            user.setAge(i);
+            users.add(user);
+        }
+        users.add(6, new User());
+        //添加用户信息到vector
+
+    }
+
+    class User {
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public void setPassword(String password) {
+            this.password = password;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+
+        private String name;
+        private String password;
+        private int age;
     }
 }
 

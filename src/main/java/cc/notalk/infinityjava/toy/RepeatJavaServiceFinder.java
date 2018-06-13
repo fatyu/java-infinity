@@ -25,7 +25,7 @@ public class RepeatJavaServiceFinder {
         for (File file2 : listFilesAndDirs) {
             try {
                 String s = FileUtils.readFileToString(file2, Charsets.UTF_8);
-                if (!(StringUtils.contains(s, "@Service") || StringUtils.contains(s, "@Controller") || StringUtils.contains(s, "@RestController"))) {
+                if (!(StringUtils.contains(s, "@Repository"))) {
                     continue;
                 }
             } catch (IOException e) {
