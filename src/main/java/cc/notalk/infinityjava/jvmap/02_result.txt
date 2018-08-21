@@ -1,0 +1,626 @@
+ 运行环境：
+
+  13年版本mbp，MacBook Pro (Retina, 13-inch, Late 2013)
+
+  Processor 2.4 GHz Intel Core i5
+
+  Memory 8 GB 1600 MHz DDR3
+ =================================第一次执行============================================================================
+ jvm参数是："-Xmx1g", "-Xms1g"
+ /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/bin/java -Dfile.encoding=UTF-8 -classpath /Users/notalk/workspace/labs/java-infinity/target/classes:/Users/notalk/.m2/repository/com/google/guava/guava/24.0-jre/guava-24.0-jre.jar:/Users/notalk/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/notalk/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/notalk/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/notalk/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/notalk/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/notalk/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/notalk/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/notalk/.m2/repository/net/bytebuddy/byte-buddy/1.8.0/byte-buddy-1.8.0.jar:/Users/notalk/.m2/repository/org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21.jar:/Users/notalk/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/notalk/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar org.openjdk.jmh.Main cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.*
+ # JMH version: 1.21
+ # VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+ # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+ # VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g
+ # Warmup: 5 iterations, 1 s each
+ # Measurement: 5 iterations, 1 s each
+ # Timeout: 10 min per iteration
+ # Threads: 1 thread, will synchronize iterations
+ # Benchmark mode: Average time, time/op
+ # Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+ # Parameters: (size = 1000)
+
+ # Run progress: 0.00% complete, ETA 00:02:30
+ # Fork: 1 of 3
+ # Warmup Iteration   1: 15.567 ns/op
+ # Warmup Iteration   2: 15.758 ns/op
+ # Warmup Iteration   3: 15.101 ns/op
+ # Warmup Iteration   4: 13.973 ns/op
+ # Warmup Iteration   5: 10.822 ns/op
+ Iteration   1: 10.435 ns/op
+ Iteration   2: 10.389 ns/op
+ Iteration   3: 10.607 ns/op
+ Iteration   4: 10.526 ns/op
+ Iteration   5: 10.723 ns/op
+
+ # Run progress: 6.67% complete, ETA 00:02:40
+ # Fork: 2 of 3
+ # Warmup Iteration   1: 11.494 ns/op
+ # Warmup Iteration   2: 10.640 ns/op
+ # Warmup Iteration   3: 10.470 ns/op
+ # Warmup Iteration   4: 10.642 ns/op
+ # Warmup Iteration   5: 10.480 ns/op
+ Iteration   1: 10.995 ns/op
+ Iteration   2: 11.157 ns/op
+ Iteration   3: 10.658 ns/op
+ Iteration   4: 10.497 ns/op
+ Iteration   5: 10.529 ns/op
+
+ # Run progress: 13.33% complete, ETA 00:02:22
+ # Fork: 3 of 3
+ # Warmup Iteration   1: 11.382 ns/op
+ # Warmup Iteration   2: 10.563 ns/op
+ # Warmup Iteration   3: 10.562 ns/op
+ # Warmup Iteration   4: 10.435 ns/op
+ # Warmup Iteration   5: 10.539 ns/op
+ Iteration   1: 10.786 ns/op
+ Iteration   2: 10.670 ns/op
+ Iteration   3: 10.566 ns/op
+ Iteration   4: 10.394 ns/op
+ Iteration   5: 10.540 ns/op
+
+
+ Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+   10.631 ±(99.9%) 0.230 ns/op [Average]
+   (min, avg, max) = (10.389, 10.631, 11.157), stdev = 0.215
+   CI (99.9%): [10.401, 10.862] (assumes normal distribution)
+
+
+ # JMH version: 1.21
+ # VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+ # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+ # VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g
+ # Warmup: 5 iterations, 1 s each
+ # Measurement: 5 iterations, 1 s each
+ # Timeout: 10 min per iteration
+ # Threads: 1 thread, will synchronize iterations
+ # Benchmark mode: Average time, time/op
+ # Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+ # Parameters: (size = 10000)
+
+ # Run progress: 20.00% complete, ETA 00:02:10
+ # Fork: 1 of 3
+ # Warmup Iteration   1: 11.684 ns/op
+ # Warmup Iteration   2: 10.569 ns/op
+ # Warmup Iteration   3: 10.412 ns/op
+ # Warmup Iteration   4: 10.478 ns/op
+ # Warmup Iteration   5: 10.909 ns/op
+ Iteration   1: 10.538 ns/op
+ Iteration   2: 10.507 ns/op
+ Iteration   3: 10.496 ns/op
+ Iteration   4: 10.469 ns/op
+ Iteration   5: 10.343 ns/op
+
+ # Run progress: 26.67% complete, ETA 00:01:58
+ # Fork: 2 of 3
+ # Warmup Iteration   1: 12.291 ns/op
+ # Warmup Iteration   2: 11.819 ns/op
+ # Warmup Iteration   3: 11.905 ns/op
+ # Warmup Iteration   4: 11.829 ns/op
+ # Warmup Iteration   5: 11.725 ns/op
+ Iteration   1: 11.790 ns/op
+ Iteration   2: 11.651 ns/op
+ Iteration   3: 11.691 ns/op
+ Iteration   4: 11.895 ns/op
+ Iteration   5: 11.747 ns/op
+
+ # Run progress: 33.33% complete, ETA 00:01:47
+ # Fork: 3 of 3
+ # Warmup Iteration   1: 11.467 ns/op
+ # Warmup Iteration   2: 11.030 ns/op
+ # Warmup Iteration   3: 11.571 ns/op
+ # Warmup Iteration   4: 21.343 ns/op
+ # Warmup Iteration   5: 14.782 ns/op
+ Iteration   1: 13.096 ns/op
+ Iteration   2: 14.248 ns/op
+ Iteration   3: 16.171 ns/op
+ Iteration   4: 12.003 ns/op
+ Iteration   5: 11.588 ns/op
+
+
+ Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+   11.882 ±(99.9%) 1.706 ns/op [Average]
+   (min, avg, max) = (10.343, 11.882, 16.171), stdev = 1.596
+   CI (99.9%): [10.176, 13.588] (assumes normal distribution)
+
+
+ # JMH version: 1.21
+ # VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+ # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+ # VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g
+ # Warmup: 5 iterations, 1 s each
+ # Measurement: 5 iterations, 1 s each
+ # Timeout: 10 min per iteration
+ # Threads: 1 thread, will synchronize iterations
+ # Benchmark mode: Average time, time/op
+ # Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+ # Parameters: (size = 1000000)
+
+ # Run progress: 40.00% complete, ETA 00:01:36
+ # Fork: 1 of 3
+ # Warmup Iteration   1: 15.387 ns/op
+ # Warmup Iteration   2: 20.374 ns/op
+ # Warmup Iteration   3: 19.726 ns/op
+ # Warmup Iteration   4: 15.013 ns/op
+ # Warmup Iteration   5: 26.006 ns/op
+ Iteration   1: 27.654 ns/op
+ Iteration   2: 15.126 ns/op
+ Iteration   3: 14.535 ns/op
+ Iteration   4: 14.134 ns/op
+ Iteration   5: 14.036 ns/op
+
+ # Run progress: 46.67% complete, ETA 00:01:25
+ # Fork: 2 of 3
+ # Warmup Iteration   1: 16.534 ns/op
+ # Warmup Iteration   2: 46.077 ns/op
+ # Warmup Iteration   3: 21.804 ns/op
+ # Warmup Iteration   4: 14.148 ns/op
+ # Warmup Iteration   5: 14.249 ns/op
+ Iteration   1: 13.719 ns/op
+ Iteration   2: 14.218 ns/op
+ Iteration   3: 13.788 ns/op
+ Iteration   4: 14.467 ns/op
+ Iteration   5: 13.985 ns/op
+
+ # Run progress: 53.33% complete, ETA 00:01:14
+ # Fork: 3 of 3
+ # Warmup Iteration   1: 16.486 ns/op
+ # Warmup Iteration   2: 14.673 ns/op
+ # Warmup Iteration   3: 13.816 ns/op
+ # Warmup Iteration   4: 13.604 ns/op
+ # Warmup Iteration   5: 13.712 ns/op
+ Iteration   1: 14.118 ns/op
+ Iteration   2: 13.801 ns/op
+ Iteration   3: 13.870 ns/op
+ Iteration   4: 13.731 ns/op
+ Iteration   5: 17.263 ns/op
+
+
+ Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+   15.230 ±(99.9%) 3.796 ns/op [Average]
+   (min, avg, max) = (13.719, 15.230, 27.654), stdev = 3.551
+   CI (99.9%): [11.434, 19.025] (assumes normal distribution)
+
+
+ # JMH version: 1.21
+ # VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+ # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+ # VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g
+ # Warmup: 5 iterations, 1 s each
+ # Measurement: 5 iterations, 1 s each
+ # Timeout: 10 min per iteration
+ # Threads: 1 thread, will synchronize iterations
+ # Benchmark mode: Average time, time/op
+ # Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+ # Parameters: (size = 10000000)
+
+ # Run progress: 60.00% complete, ETA 00:01:04
+ # Fork: 1 of 3
+ # Warmup Iteration   1: 44.113 ns/op
+ # Warmup Iteration   2: 39.133 ns/op
+ # Warmup Iteration   3: 39.370 ns/op
+ # Warmup Iteration   4: 38.498 ns/op
+ # Warmup Iteration   5: 38.197 ns/op
+ Iteration   1: 39.098 ns/op
+ Iteration   2: 39.104 ns/op
+ Iteration   3: 38.317 ns/op
+ Iteration   4: 43.134 ns/op
+ Iteration   5: 40.276 ns/op
+
+ # Run progress: 66.67% complete, ETA 00:00:53
+ # Fork: 2 of 3
+ # Warmup Iteration   1: 42.303 ns/op
+ # Warmup Iteration   2: 39.532 ns/op
+ # Warmup Iteration   3: 38.785 ns/op
+ # Warmup Iteration   4: 40.187 ns/op
+ # Warmup Iteration   5: 38.742 ns/op
+ Iteration   1: 38.900 ns/op
+ Iteration   2: 37.840 ns/op
+ Iteration   3: 37.614 ns/op
+ Iteration   4: 44.348 ns/op
+ Iteration   5: 37.548 ns/op
+
+ # Run progress: 73.33% complete, ETA 00:00:42
+ # Fork: 3 of 3
+ # Warmup Iteration   1: 39.527 ns/op
+ # Warmup Iteration   2: 38.131 ns/op
+ # Warmup Iteration   3: 37.858 ns/op
+ # Warmup Iteration   4: 38.055 ns/op
+ # Warmup Iteration   5: 38.020 ns/op
+ Iteration   1: 38.178 ns/op
+ Iteration   2: 37.510 ns/op
+ Iteration   3: 42.680 ns/op
+ Iteration   4: 39.803 ns/op
+ Iteration   5: 37.478 ns/op
+
+
+ Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+   39.455 ±(99.9%) 2.382 ns/op [Average]
+   (min, avg, max) = (37.478, 39.455, 44.348), stdev = 2.228
+   CI (99.9%): [37.074, 41.837] (assumes normal distribution)
+
+
+ # JMH version: 1.21
+ # VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+ # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+ # VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g
+ # Warmup: 5 iterations, 1 s each
+ # Measurement: 5 iterations, 1 s each
+ # Timeout: 10 min per iteration
+ # Threads: 1 thread, will synchronize iterations
+ # Benchmark mode: Average time, time/op
+ # Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+ # Parameters: (size = 100000000)
+
+ # Run progress: 80.00% complete, ETA 00:00:31
+ # Fork: 1 of 3
+ # Warmup Iteration   1: 47.154 ns/op
+ # Warmup Iteration   2: 45.673 ns/op
+ # Warmup Iteration   3: 45.638 ns/op
+ # Warmup Iteration   4: 46.475 ns/op
+ # Warmup Iteration   5: 45.623 ns/op
+ Iteration   1: 46.342 ns/op
+ Iteration   2: 44.757 ns/op
+ Iteration   3: 53.661 ns/op
+ Iteration   4: 44.419 ns/op
+ Iteration   5: 44.455 ns/op
+
+ # Run progress: 86.67% complete, ETA 00:00:21
+ # Fork: 2 of 3
+ # Warmup Iteration   1: 46.700 ns/op
+ # Warmup Iteration   2: 46.051 ns/op
+ # Warmup Iteration   3: 44.670 ns/op
+ # Warmup Iteration   4: 44.711 ns/op
+ # Warmup Iteration   5: 45.837 ns/op
+ Iteration   1: 44.594 ns/op
+ Iteration   2: 60.279 ns/op
+ Iteration   3: 59.882 ns/op
+ Iteration   4: 44.642 ns/op
+ Iteration   5: 44.906 ns/op
+
+ # Run progress: 93.33% complete, ETA 00:00:10
+ # Fork: 3 of 3
+ # Warmup Iteration   1: 46.375 ns/op
+ # Warmup Iteration   2: 64.364 ns/op
+ # Warmup Iteration   3: 97.463 ns/op
+ # Warmup Iteration   4: 46.119 ns/op
+ # Warmup Iteration   5: 41.198 ns/op
+ Iteration   1: 40.798 ns/op
+ Iteration   2: 41.057 ns/op
+ Iteration   3: 41.316 ns/op
+ Iteration   4: 40.978 ns/op
+ Iteration   5: 40.849 ns/op
+
+
+ Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+   46.196 ±(99.9%) 6.949 ns/op [Average]
+   (min, avg, max) = (40.798, 46.196, 60.279), stdev = 6.500
+   CI (99.9%): [39.247, 53.144] (assumes normal distribution)
+
+
+ # Run complete. Total time: 00:02:39
+
+ REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+ why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+ experiments, perform baseline and negative tests that provide experimental control, make sure
+ the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+ Do not assume the numbers tell you what you want them to tell.
+----重点关注此处的结果信息----
+ Benchmark                       (size)  Mode  Cnt   Score   Error  Units
+ Ch02_TransportHugePage.test       1000  avgt   15  10.631 ± 0.230  ns/op
+ Ch02_TransportHugePage.test      10000  avgt   15  11.882 ± 1.706  ns/op
+ Ch02_TransportHugePage.test    1000000  avgt   15  15.230 ± 3.796  ns/op
+ Ch02_TransportHugePage.test   10000000  avgt   15  39.455 ± 2.382  ns/op
+ Ch02_TransportHugePage.test  100000000  avgt   15  46.196 ± 6.949  ns/op
+
+ Process finished with exit code 0
+=================================第二次执行结果================================
+jvm参数是："-Xmx1g", "-Xms1g", "-XX:+UseHugeTLBFS"
+/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/bin/java -Dfile.encoding=UTF-8 -classpath /Users/notalk/workspace/labs/java-infinity/target/classes:/Users/notalk/.m2/repository/com/google/guava/guava/24.0-jre/guava-24.0-jre.jar:/Users/notalk/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/notalk/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/notalk/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/notalk/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/notalk/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/notalk/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/notalk/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/notalk/.m2/repository/net/bytebuddy/byte-buddy/1.8.0/byte-buddy-1.8.0.jar:/Users/notalk/.m2/repository/org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21.jar:/Users/notalk/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/notalk/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar org.openjdk.jmh.Main cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.*
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g -XX:+UseHugeTLBFS
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+# Parameters: (size = 1000)
+
+# Run progress: 0.00% complete, ETA 00:02:30
+# Fork: 1 of 3
+# Warmup Iteration   1: 14.109 ns/op
+# Warmup Iteration   2: 10.797 ns/op
+# Warmup Iteration   3: 10.596 ns/op
+# Warmup Iteration   4: 11.761 ns/op
+# Warmup Iteration   5: 12.203 ns/op
+Iteration   1: 24.045 ns/op
+Iteration   2: 12.509 ns/op
+Iteration   3: 11.997 ns/op
+Iteration   4: 12.587 ns/op
+Iteration   5: 22.287 ns/op
+
+# Run progress: 6.67% complete, ETA 00:02:40
+# Fork: 2 of 3
+# Warmup Iteration   1: 12.035 ns/op
+# Warmup Iteration   2: 12.807 ns/op
+# Warmup Iteration   3: 15.705 ns/op
+# Warmup Iteration   4: 17.126 ns/op
+# Warmup Iteration   5: 18.620 ns/op
+Iteration   1: 15.019 ns/op
+Iteration   2: 13.241 ns/op
+Iteration   3: 12.837 ns/op
+Iteration   4: 14.782 ns/op
+Iteration   5: 14.825 ns/op
+
+# Run progress: 13.33% complete, ETA 00:02:24
+# Fork: 3 of 3
+# Warmup Iteration   1: 14.982 ns/op
+# Warmup Iteration   2: 12.959 ns/op
+# Warmup Iteration   3: 13.425 ns/op
+# Warmup Iteration   4: 23.313 ns/op
+# Warmup Iteration   5: 16.653 ns/op
+Iteration   1: 11.223 ns/op
+Iteration   2: 13.130 ns/op
+Iteration   3: 15.548 ns/op
+Iteration   4: 13.613 ns/op
+Iteration   5: 10.737 ns/op
+
+
+Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+  14.559 ±(99.9%) 4.031 ns/op [Average]
+  (min, avg, max) = (10.737, 14.559, 24.045), stdev = 3.771
+  CI (99.9%): [10.527, 18.590] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g -XX:+UseHugeTLBFS
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+# Parameters: (size = 10000)
+
+# Run progress: 20.00% complete, ETA 00:02:12
+# Fork: 1 of 3
+# Warmup Iteration   1: 17.260 ns/op
+# Warmup Iteration   2: 14.379 ns/op
+# Warmup Iteration   3: 22.389 ns/op
+# Warmup Iteration   4: 17.344 ns/op
+# Warmup Iteration   5: 11.188 ns/op
+Iteration   1: 11.459 ns/op
+Iteration   2: 10.963 ns/op
+Iteration   3: 13.510 ns/op
+Iteration   4: 10.658 ns/op
+Iteration   5: 11.445 ns/op
+
+# Run progress: 26.67% complete, ETA 00:02:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 10.930 ns/op
+# Warmup Iteration   2: 11.344 ns/op
+# Warmup Iteration   3: 10.896 ns/op
+# Warmup Iteration   4: 11.968 ns/op
+# Warmup Iteration   5: 12.711 ns/op
+Iteration   1: 11.322 ns/op
+Iteration   2: 11.803 ns/op
+Iteration   3: 12.009 ns/op
+Iteration   4: 11.845 ns/op
+Iteration   5: 11.610 ns/op
+
+# Run progress: 33.33% complete, ETA 00:01:48
+# Fork: 3 of 3
+# Warmup Iteration   1: 11.564 ns/op
+# Warmup Iteration   2: 10.959 ns/op
+# Warmup Iteration   3: 12.018 ns/op
+# Warmup Iteration   4: 14.480 ns/op
+# Warmup Iteration   5: 12.344 ns/op
+Iteration   1: 11.092 ns/op
+Iteration   2: 10.754 ns/op
+Iteration   3: 12.246 ns/op
+Iteration   4: 10.684 ns/op
+Iteration   5: 14.501 ns/op
+
+
+Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+  11.727 ±(99.9%) 1.134 ns/op [Average]
+  (min, avg, max) = (10.658, 11.727, 14.501), stdev = 1.060
+  CI (99.9%): [10.593, 12.860] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g -XX:+UseHugeTLBFS
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+# Parameters: (size = 1000000)
+
+# Run progress: 40.00% complete, ETA 00:01:37
+# Fork: 1 of 3
+# Warmup Iteration   1: 27.928 ns/op
+# Warmup Iteration   2: 104.303 ns/op
+# Warmup Iteration   3: 17.281 ns/op
+# Warmup Iteration   4: 35.750 ns/op
+# Warmup Iteration   5: 18.868 ns/op
+Iteration   1: 15.244 ns/op
+Iteration   2: 15.819 ns/op
+Iteration   3: 17.473 ns/op
+Iteration   4: 17.286 ns/op
+Iteration   5: 13.760 ns/op
+
+# Run progress: 46.67% complete, ETA 00:01:26
+# Fork: 2 of 3
+# Warmup Iteration   1: 25.777 ns/op
+# Warmup Iteration   2: 18.242 ns/op
+# Warmup Iteration   3: 15.697 ns/op
+# Warmup Iteration   4: 12.824 ns/op
+# Warmup Iteration   5: 13.020 ns/op
+Iteration   1: 13.538 ns/op
+Iteration   2: 13.229 ns/op
+Iteration   3: 13.668 ns/op
+Iteration   4: 13.300 ns/op
+Iteration   5: 13.399 ns/op
+
+# Run progress: 53.33% complete, ETA 00:01:15
+# Fork: 3 of 3
+# Warmup Iteration   1: 16.446 ns/op
+# Warmup Iteration   2: 13.770 ns/op
+# Warmup Iteration   3: 15.760 ns/op
+# Warmup Iteration   4: 15.687 ns/op
+# Warmup Iteration   5: 16.370 ns/op
+Iteration   1: 14.722 ns/op
+Iteration   2: 19.147 ns/op
+Iteration   3: 31.636 ns/op
+Iteration   4: 49.386 ns/op
+Iteration   5: 18.825 ns/op
+
+
+Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+  18.695 ±(99.9%) 10.351 ns/op [Average]
+  (min, avg, max) = (13.229, 18.695, 49.386), stdev = 9.682
+  CI (99.9%): [8.345, 29.046] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g -XX:+UseHugeTLBFS
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+# Parameters: (size = 10000000)
+
+# Run progress: 60.00% complete, ETA 00:01:04
+# Fork: 1 of 3
+# Warmup Iteration   1: 43.255 ns/op
+# Warmup Iteration   2: 40.939 ns/op
+# Warmup Iteration   3: 51.110 ns/op
+# Warmup Iteration   4: 41.112 ns/op
+# Warmup Iteration   5: 39.388 ns/op
+Iteration   1: 39.363 ns/op
+Iteration   2: 44.049 ns/op
+Iteration   3: 36.976 ns/op
+Iteration   4: 39.826 ns/op
+Iteration   5: 38.675 ns/op
+
+# Run progress: 66.67% complete, ETA 00:00:53
+# Fork: 2 of 3
+# Warmup Iteration   1: 41.391 ns/op
+# Warmup Iteration   2: 37.379 ns/op
+# Warmup Iteration   3: 36.759 ns/op
+# Warmup Iteration   4: 39.933 ns/op
+# Warmup Iteration   5: 49.472 ns/op
+Iteration   1: 39.307 ns/op
+Iteration   2: 38.015 ns/op
+Iteration   3: 37.812 ns/op
+Iteration   4: 37.680 ns/op
+Iteration   5: 36.706 ns/op
+
+# Run progress: 73.33% complete, ETA 00:00:42
+# Fork: 3 of 3
+# Warmup Iteration   1: 39.706 ns/op
+# Warmup Iteration   2: 36.673 ns/op
+# Warmup Iteration   3: 36.066 ns/op
+# Warmup Iteration   4: 36.724 ns/op
+# Warmup Iteration   5: 36.062 ns/op
+Iteration   1: 36.355 ns/op
+Iteration   2: 38.768 ns/op
+Iteration   3: 40.738 ns/op
+Iteration   4: 39.841 ns/op
+Iteration   5: 40.036 ns/op
+
+
+Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+  38.943 ±(99.9%) 2.056 ns/op [Average]
+  (min, avg, max) = (36.355, 38.943, 44.049), stdev = 1.923
+  CI (99.9%): [36.887, 40.999] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Xmx1g -Xms1g -XX:+UseHugeTLBFS
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test
+# Parameters: (size = 100000000)
+
+# Run progress: 80.00% complete, ETA 00:00:32
+# Fork: 1 of 3
+# Warmup Iteration   1: 59.021 ns/op
+# Warmup Iteration   2: 67.671 ns/op
+# Warmup Iteration   3: 49.626 ns/op
+# Warmup Iteration   4: 58.438 ns/op
+# Warmup Iteration   5: 52.884 ns/op
+Iteration   1: 60.658 ns/op
+Iteration   2: 47.691 ns/op
+Iteration   3: 55.214 ns/op
+Iteration   4: 53.388 ns/op
+Iteration   5: 44.273 ns/op
+
+# Run progress: 86.67% complete, ETA 00:00:21
+# Fork: 2 of 3
+# Warmup Iteration   1: 45.290 ns/op
+# Warmup Iteration   2: 46.834 ns/op
+# Warmup Iteration   3: 43.483 ns/op
+# Warmup Iteration   4: 43.463 ns/op
+# Warmup Iteration   5: 43.738 ns/op
+Iteration   1: 43.347 ns/op
+Iteration   2: 43.759 ns/op
+Iteration   3: 43.477 ns/op
+Iteration   4: 43.995 ns/op
+Iteration   5: 43.634 ns/op
+
+# Run progress: 93.33% complete, ETA 00:00:10
+# Fork: 3 of 3
+# Warmup Iteration   1: 45.618 ns/op
+# Warmup Iteration   2: 44.549 ns/op
+# Warmup Iteration   3: 43.488 ns/op
+# Warmup Iteration   4: 43.147 ns/op
+# Warmup Iteration   5: 43.367 ns/op
+Iteration   1: 43.501 ns/op
+Iteration   2: 43.272 ns/op
+Iteration   3: 43.242 ns/op
+Iteration   4: 43.421 ns/op
+Iteration   5: 43.116 ns/op
+
+
+Result "cc.notalk.infinityjava.jvmap.Ch02_TransportHugePage.test":
+  46.399 ±(99.9%) 5.870 ns/op [Average]
+  (min, avg, max) = (43.116, 46.399, 60.658), stdev = 5.491
+  CI (99.9%): [40.529, 52.269] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:40
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                       (size)  Mode  Cnt   Score    Error  Units
+Ch02_TransportHugePage.test       1000  avgt   15  14.559 ±  4.031  ns/op
+Ch02_TransportHugePage.test      10000  avgt   15  11.727 ±  1.134  ns/op
+Ch02_TransportHugePage.test    1000000  avgt   15  18.695 ± 10.351  ns/op
+Ch02_TransportHugePage.test   10000000  avgt   15  38.943 ±  2.056  ns/op
+Ch02_TransportHugePage.test  100000000  avgt   15  46.399 ±  5.870  ns/op
+
+Process finished with exit code 0
+

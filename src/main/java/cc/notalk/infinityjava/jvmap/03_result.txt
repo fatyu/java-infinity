@@ -1,0 +1,61 @@
+ 运行环境：
+
+  13年版本mbp，MacBook Pro (Retina, 13-inch, Late 2013)
+
+  Processor 2.4 GHz Intel Core i5
+
+  Memory 8 GB 1600 MHz DDR3
+=================================第一次执行============================================================================
+/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin/java -Xms4G -Xmx4G -Xlog:gc
+[0.174s][info][gc] Using G1
+[4.802s][info][gc] GC(0) Pause Young (G1 Evacuation Pause) 370M->365M(4096M) 3199.561ms
+[7.073s][info][gc] GC(1) Pause Young (G1 Evacuation Pause) 743M->745M(4096M) 1480.779ms
+[8.914s][info][gc] GC(2) Pause Young (G1 Evacuation Pause) 1103M->1105M(4096M) 1002.587ms
+[11.212s][info][gc] GC(3) Pause Young (G1 Evacuation Pause) 1551M->1553M(4096M) 1246.347ms
+[12.415s][info][gc] GC(4) Pause Young (G1 Evacuation Pause) 1731M->1734M(4096M) 821.628ms
+[13.561s][info][gc] GC(5) Pause Initial Mark (G1 Humongous Allocation) 1897M->1898M(4096M) 758.169ms
+[13.561s][info][gc] GC(6) Concurrent Cycle
+[16.136s][info][gc] GC(7) Pause Young (G1 Evacuation Pause) 2478M->2479M(4096M) 937.430ms
+[17.262s][info][gc] GC(8) Pause Young (G1 Evacuation Pause) 2657M->2659M(4096M) 754.759ms
+[22.246s][info][gc] GC(6) Pause Remark 2761M->2761M(4096M) 17.680ms
+[23.188s][info][gc] GC(6) Pause Cleanup 2761M->2215M(4096M) 5.412ms
+[23.282s][info][gc] GC(6) Concurrent Cycle 9720.834ms
+
+=================================第二次执行============================================================================
+[0.085s][info][gc] Using Parallel
+[5.927s][info][gc] GC(0) Pause Young (Allocation Failure) 905M->715M(3925M) 3705.906ms
+[10.044s][info][gc] GC(1) Pause Young (Allocation Failure) 1739M->1443M(3925M) 3411.821ms
+
+=================================第三次执行============================================================================
+-XX:+UseConcMarkSweepGC -Xms4G -Xmx4G -Xlog:gc
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[0.044s][info][gc] Using Concurrent Mark Sweep
+[3.706s][info][gc] GC(0) Pause Young (Allocation Failure) 266M->232M(4062M) 2948.173ms
+[4.629s][info][gc] GC(1) Pause Young (Allocation Failure) 498M->512M(4062M) 833.335ms
+[5.731s][info][gc] GC(2) Pause Young (Allocation Failure) 778M->927M(4062M) 1035.701ms
+[6.570s][info][gc] GC(3) Pause Young (Allocation Failure) 1193M->1237M(4062M) 766.349ms
+[8.549s][info][gc] GC(4) Pause Young (Allocation Failure) 1771M->1965M(4062M) 1622.161ms
+[8.565s][info][gc] GC(5) Pause Initial Mark 1970M->1970M(4062M) 16.075ms
+[8.565s][info][gc] GC(5) Concurrent Mark
+[11.303s][info][gc] GC(6) Pause Young (Allocation Failure) 2231M->2378M(4062M) 2654.900ms
+[15.471s][info][gc] GC(7) Pause Young (Allocation Failure) 3045M->3186M(4062M) 2602.514ms
+[24.139s][info][gc] GC(5) Concurrent Mark 15574.045ms
+[24.139s][info][gc] GC(5) Concurrent Preclean
+[24.208s][info][gc] GC(5) Concurrent Preclean 68.793ms
+[24.208s][info][gc] GC(5) Concurrent Abortable Preclean
+[24.208s][info][gc] GC(5) Concurrent Abortable Preclean 0.011ms
+[24.321s][info][gc] GC(5) Pause Remark 3409M->3409M(4062M) 113.208ms
+[24.321s][info][gc] GC(5) Concurrent Sweep
+[25.635s][info][gc] GC(5) Concurrent Sweep 1313.799ms
+[25.635s][info][gc] GC(5) Concurrent Reset
+[25.655s][info][gc] GC(5) Concurrent Reset 19.512ms
+=================================第四次执行============================================================================
+-XX:+UseConcMarkSweepGC -Xms4G -Xmx4G -Xlog:gc
+Unrecognized VM option 'UseShenandoahGC'
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+=================================第五次执行============================================================================
+-XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xms4G -Xmx4G
+Unrecognized VM option 'UseEpsilonGC'
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
