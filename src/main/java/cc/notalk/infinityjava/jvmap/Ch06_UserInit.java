@@ -1,48 +1,46 @@
 package cc.notalk.infinityjava.jvmap;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.concurrent.CountDownLatch;
+import org.openjdk.jmh.annotations.*;
 
-public class Ch05_TLABHeapParsability {
+import java.util.concurrent.TimeUnit;
 
-    public static void main(String[] args) {
-        final int TRAKTORISTOV = 300;
-        CountDownLatch cdl = new CountDownLatch(TRAKTORISTOV);
+@Warmup(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
+@Measurement(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
+@Fork(value = 3)
+@BenchmarkMode(Mode.AverageTime)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
+@State(Scope.Benchmark)
+public class Ch06_UserInit {
 
-
-        for (int i = 0; i < TRAKTORISTOV; i++) {
-            new Thread(() -> allocateAndWait(cdl)).start();
-        }
-        try {
-            cdl.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        List<Object> list = new ArrayList<>();
-        new Thread(() -> allocateAndDie(list)).start();
+    @Benchmark
+    public Object init() {
+        return new Init(42);
     }
 
-
-    public static void allocateAndWait(CountDownLatch cdl) {
-        Object obj = new Object();
-        cdl.countDown();
-        while (true) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                break;
-            }
-        }
-        System.out.println(obj);
+    @Benchmark
+    public Object initLeaky() {
+        return new InitLeaky(42);
     }
 
+    static class Init {
+        private int x;
 
-    public static void allocateAndDie(Collection collection) {
-        while (true) {
-            collection.add(new Object());
+        public Init(int x) {
+            this.x = x;
+        }
+    }
+
+    static class InitLeaky {
+        private int x;
+
+        public InitLeaky(int x) {
+            doSomething();
+            this.x = x;
+        }
+
+        @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+        void doSomething() {
+            // intentionally left blank
         }
     }
 }

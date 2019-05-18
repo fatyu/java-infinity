@@ -18,6 +18,7 @@ public class ByteBufferTest {
         /**
          * 创建指定字节大小的缓冲区
          */
+
         ByteBuffer buffer = ByteBuffer.allocate(256);
         int readByte = inChannel.read(buffer);
         while (readByte != -1) {

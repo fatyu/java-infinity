@@ -45,6 +45,28 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.dianping.cat/cat-client -->
+        <dependency>
+            <groupId>com.dianping.cat</groupId>
+            <artifactId>cat-client</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.11.3</version>
+        </dependency>
+
+        <!-- tcpip used for arp test-->
+        <!-- https://mvnrepository.com/artifact/jpcap/jpcap -->
+        <dependency>
+            <groupId>jpcap</groupId>
+            <artifactId>jpcap</artifactId>
+            <version>0.1.18-002</version>
+        </dependency>
+
 
     </dependencies>
     <plugins>
