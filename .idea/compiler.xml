@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9">
-      <module name="java-infinity" target="9" />
+      <module name="java-infinity" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
