@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,8 +11,8 @@
         <module name="java-infinity" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="9">
-      <module name="java-infinity" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="java-infinity" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
