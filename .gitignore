@@ -23,7 +23,14 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-.idea/workspace.xml
-/.idea/
+
 /target/
 src/main/java/cc/notalk/infinityjava/.DS_Store
+.idea/
+.DS_Store
+src/.DS_Store
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/cc/.DS_Store
+src/main/java/cc/notalk/.DS_Store
+src/main/resources/.DS_Store
